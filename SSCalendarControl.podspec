@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SSCalendarControl"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "A simple and lightweight calendar control written in swift."
 
   # This description is used to generate tags and improve search results.
@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.author             = { "Ketan Chopda" => "Ketan.C@simformsolutions.com" }
+  spec.author             = { "Ketan Chopda" => "reg@simform.in" }
 
   spec.platform     = :ios
   spec.ios.deployment_target = "10.0"

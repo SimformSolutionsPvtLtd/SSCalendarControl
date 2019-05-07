@@ -224,7 +224,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Ketan Chopda";
+				ORGANIZATIONNAME = "Simform solution";
 				TargetAttributes = {
 					73FCF2B9227C4E30002625FD = {
 						CreatedOnToolsVersion = 10.1;

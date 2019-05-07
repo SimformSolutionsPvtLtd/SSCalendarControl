@@ -3,7 +3,7 @@
 //  CalendarControll
 //
 //  Created by Ketan Chopda on 11/01/19.
-//  Copyright © 2019 Ketan Chopda. All rights reserved.
+//  Copyright © 2019 Simform solution. All rights reserved.
 //
 
 import Foundation
