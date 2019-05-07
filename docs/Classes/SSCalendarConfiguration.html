@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SSCalendarConfiguration Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SSCalendarConfiguration" class="dashAnchor"></a>
+    <a title="SSCalendarConfiguration Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SSCalendarControl Docs</a> (34% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SSCalendarControl Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SSCalendarConfiguration Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SSCalendarConfiguration.html">SSCalendarConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSCalendarDay.html">SSCalendarDay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSCalendarHelper.html">SSCalendarHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSCalendarMonth.html">SSCalendarMonth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSCalendarView.html">SSCalendarView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSDaysCell.html">SSDaysCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSEmptyDayCell.html">SSEmptyDayCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSHeaderView.html">SSHeaderView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSMonthCell.html">SSMonthCell</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/WeekDays.html">WeekDays</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/WeekStartDay.html">WeekStartDay</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:17SSCalendarControl17getCountForMonday33_67421B943EE6D2930DF662C2F5EBB9C1LLyS2iF">getCountForMonday(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:17SSCalendarControl17getCountForSunday33_67421B943EE6D2930DF662C2F5EBB9C1LLyS2iF">getCountForSunday(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:17SSCalendarControl15getNumberOfDays4year5monthS2i_SitF">getNumberOfDays(year:month:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:17SSCalendarControl13getSkeepCount_8startDayS2i_AA09WeekStartG0OtF">getSkeepCount(_:startDay:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/MonthCellDelegate.html">MonthCellDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SSCalendarDeleagte.html">SSCalendarDeleagte</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SSNibLoadable.html">SSNibLoadable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/SSConstants.html">SSConstants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SSDateFormat.html">SSDateFormat</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SSCalendarConfiguration</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SSCalendarConfiguration</span></code></pre>
+
+                </div>
+              </div>
+            <p>SSCalendarView configuration</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC20previousDayTextColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/previousDayTextColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC20previousDayTextColorSo7UIColorCvp">previousDayTextColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Previous day text color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">previousDayTextColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC22previousDayBorderColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/previousDayBorderColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC22previousDayBorderColorSo7UIColorCvp">previousDayBorderColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Previous day border color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">previousDayBorderColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC26previousDayBackgroundColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/previousDayBackgroundColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC26previousDayBackgroundColorSo7UIColorCvp">previousDayBackgroundColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Previous day backgound color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">previousDayBackgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC20selectedDayTextColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/selectedDayTextColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC20selectedDayTextColorSo7UIColorCvp">selectedDayTextColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Selected day text color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">selectedDayTextColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC25selectedDayBackGroudColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/selectedDayBackGroudColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC25selectedDayBackGroudColorSo7UIColorCvp">selectedDayBackGroudColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Selected background text color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">selectedDayBackGroudColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC22selectedDayBorderColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/selectedDayBorderColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC22selectedDayBorderColorSo7UIColorCvp">selectedDayBorderColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Selected border text color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">selectedDayBorderColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC20upcomingDayTextColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/upcomingDayTextColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC20upcomingDayTextColorSo7UIColorCvp">upcomingDayTextColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Upcoming daye text color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">upcomingDayTextColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC26upcomingDayBackgroundColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/upcomingDayBackgroundColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC26upcomingDayBackgroundColorSo7UIColorCvp">upcomingDayBackgroundColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Upcoming day background color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">upcomingDayBackgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC23upcomingDaysBorderColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/upcomingDaysBorderColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC23upcomingDaysBorderColorSo7UIColorCvp">upcomingDaysBorderColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Upcoming day border color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">upcomingDaysBorderColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC19currentDayTextColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/currentDayTextColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC19currentDayTextColorSo7UIColorCvp">currentDayTextColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current day text color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">currentDayTextColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC25currentDayBackgroundColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/currentDayBackgroundColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC25currentDayBackgroundColorSo7UIColorCvp">currentDayBackgroundColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current day background color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">currentDayBackgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC21currentDayBorderColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/currentDayBorderColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC21currentDayBorderColorSo7UIColorCvp">currentDayBorderColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current day border color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">currentDayBorderColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC12dayLabelFontSo6UIFontCvp"></a>
+                    <a name="//apple_ref/swift/Property/dayLabelFont" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC12dayLabelFontSo6UIFontCvp">dayLabelFont</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Day label font</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">dayLabelFont</span><span class="p">:</span> <span class="kt">UIFont</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC14monthLabelFontSo6UIFontCvp"></a>
+                    <a name="//apple_ref/swift/Property/monthLabelFont" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC14monthLabelFontSo6UIFontCvp">monthLabelFont</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Month description label font</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">monthLabelFont</span><span class="p">:</span> <span class="kt">UIFont</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC19monthLabelTextColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/monthLabelTextColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC19monthLabelTextColorSo7UIColorCvp">monthLabelTextColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Month label text color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">monthLabelTextColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC16weekDayLabelFontSo6UIFontCvp"></a>
+                    <a name="//apple_ref/swift/Property/weekDayLabelFont" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC16weekDayLabelFontSo6UIFontCvp">weekDayLabelFont</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Week day name label font</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">weekDayLabelFont</span><span class="p">:</span> <span class="kt">UIFont</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC21weekDayLabelTextColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/weekDayLabelTextColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC21weekDayLabelTextColorSo7UIColorCvp">weekDayLabelTextColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Week day label text color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">weekDayLabelTextColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC27weekDayLabelBackgroundColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/weekDayLabelBackgroundColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC27weekDayLabelBackgroundColorSo7UIColorCvp">weekDayLabelBackgroundColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Week day label background color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">weekDayLabelBackgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC18weekDayBorderColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/weekDayBorderColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC18weekDayBorderColorSo7UIColorCvp">weekDayBorderColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Week day border color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">weekDayBorderColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC19shouldRoundDaysViewSbvp"></a>
+                    <a name="//apple_ref/swift/Property/shouldRoundDaysView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC19shouldRoundDaysViewSbvp">shouldRoundDaysView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Should round days cell</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">shouldRoundDaysView</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC24monthViewBottomLineColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/monthViewBottomLineColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC24monthViewBottomLineColorSo7UIColorCvp">monthViewBottomLineColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Monthview bottom line color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">monthViewBottomLineColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl0A13ConfigurationC24monthViewBackgroundColorSo7UIColorCvp"></a>
+                    <a name="//apple_ref/swift/Property/monthViewBackgroundColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl0A13ConfigurationC24monthViewBackgroundColorSo7UIColorCvp">monthViewBackgroundColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Monthview background color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">monthViewBackgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2018cla MIT. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

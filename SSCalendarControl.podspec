@@ -46,6 +46,4 @@ Pod::Spec.new do |spec|
   spec.source_files  = "SSCalendar/SSCalendar/SSCalendar/**/*.swift"
   spec.resources = ['SSCalendar/SSCalendar/SSCalendar/**/*.xib']
 
-  spec.documentation_url = 'docs/index.html'
-
 end
