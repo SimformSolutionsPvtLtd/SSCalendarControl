@@ -22,16 +22,16 @@ SSCalendarControl is Small and beautiful calendar control written in swift 4.2.
 - Xcode 9+
 
 # Installation
-**CocoaPods**
-
+# Installation
+ 
 - You can use CocoaPods to install SSCalendarControl by adding it to your Podfile:
 
-    use_frameworks!
-    pod 'SSSpinnerButton'
+       use_frameworks!
+       pod 'SSCalendarControl'
 
 -  
-    import UIKit
-    import SSSpinnerButton
+       import UIKit
+       import SSCalendarControl
 
 **Manually**
 -   Download and drop **SSCalendarControl** folder in your project.
@@ -40,7 +40,7 @@ SSCalendarControl is Small and beautiful calendar control written in swift 4.2.
 # Usage example
 
 -   In the storyboard add a UIView and change its class to SSCalendarView
--   ![Alt text](https://github.com/simformsolutions/SSCalendar/blob/develop/SSCalendar_Usage.png)
+   ![Alt text](https://github.com/simformsolutions/SSCalendar/blob/develop/SSCalendar_Usage.png)
 
 **Setup Calendar**
 
