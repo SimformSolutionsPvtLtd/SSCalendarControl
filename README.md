@@ -87,7 +87,7 @@ SSCalendarControl is Small and beautiful calendar control written in swift 4.2.
     }
 
 #  Contribute
--   We would love you for the contribution to SSspinnerButton, check the LICENSE file for more info.
+-   We would love you for the contribution to SSCalendarControl, check the LICENSE file for more info.
 
 #  Meta
 -    Distributed under the MIT license. See LICENSE for more information.
