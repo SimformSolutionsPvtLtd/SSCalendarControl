@@ -13,6 +13,7 @@ SSCalendarControl is Small and beautiful calendar control written in swift 4.2.
 - Customizable control
 - Flexible date range
 - Customizable week day
+- Selection delegates
 - Customizable month and days cells
 - CocoaPods
 
@@ -25,11 +26,12 @@ SSCalendarControl is Small and beautiful calendar control written in swift 4.2.
 
 - You can use CocoaPods to install SSCalendarControl by adding it to your Podfile:
 
-use_frameworks!
-pod 'SSCalendarControl'
+    use_frameworks!
+    pod 'SSSpinnerButton'
 
-import UIKit
-import SSCalendarControl
+-  
+    import UIKit
+    import SSSpinnerButton
 
 **Manually**
 -   Download and drop **SSCalendarControl** folder in your project.
@@ -68,6 +70,21 @@ import SSCalendarControl
     calendarView.configuration.currentDayBorderColor = UIColor.black
     calendarView.configuration.currentDayTextColor = UIColor.white
     calendarView.configuration.currentDayBackgroundColor = UIColor.red
+
+**Selection Delegates**
+    
+    calendarView.delegate = self
+    
+    extension ViewController: SSCalendarDeleagte {
+    
+        func dateSelected(_ date: Date) {
+            print("selected: \(date)")
+        }
+    
+        func dateDeSelected(_ date: Date) {
+            print("deSelected: \(date)")
+        }
+    }
 
 #  Contribute
 -   We would love you for the contribution to SSspinnerButton, check the LICENSE file for more info.

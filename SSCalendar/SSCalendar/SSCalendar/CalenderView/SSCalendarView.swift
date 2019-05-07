@@ -9,19 +9,19 @@
 import UIKit
 
 /// Calendar Delegates
-protocol SSCalendarDeleagte: class {
+public protocol SSCalendarDeleagte: class {
     func dateSelected(_ date: Date)
     func dateDeSelected(_ date: Date)
 }
 
 /// Calendar View
-class SSCalendarView: UIView, SSNibLoadable {
+public class SSCalendarView: UIView, SSNibLoadable {
     
     // MARK:- Outlet
     @IBOutlet weak var cvMonths: UICollectionView!
     
     // MARK:- Variables
-    weak var delegate: SSCalendarDeleagte?
+    public weak var delegate: SSCalendarDeleagte?
     private var startingDate = SSConstants.todayDate
     private var endingDate = SSConstants.todayDate.getDateAfter(years: 1, months: 0)
     private var monthModels = [SSCalendarMonth]()
@@ -37,9 +37,9 @@ class SSCalendarView: UIView, SSNibLoadable {
     fileprivate let headerViewID = "HeaderView"
     
     /// Calendar view configration
-    public var configuration = SSCalendarConfiguration()
+    var configuration = SSCalendarConfiguration()
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         initialSetup()
     }
@@ -131,7 +131,7 @@ extension SSCalendarView {
 // MARK:- UICollectionViewDataSource
 extension SSCalendarView: UICollectionViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return monthModels.count
     }
     
@@ -141,7 +141,7 @@ extension SSCalendarView: UICollectionViewDataSource {
         cell.collectionIndexPath = indexPath
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: monthCellID, for: indexPath) as? SSMonthCell else {
             return UICollectionViewCell()
         }

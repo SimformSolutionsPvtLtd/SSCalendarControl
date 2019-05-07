@@ -54,7 +54,7 @@ extension Date {
     ///   - years: years
     ///   - months: months
     /// - Returns: Retruns date after the given time
-    func getDateAfter(years: Int, months: Int) -> Date {
+    public func getDateAfter(years: Int, months: Int) -> Date {
         var dateComponents = DateComponents()
         dateComponents.year = years
         dateComponents.month = months

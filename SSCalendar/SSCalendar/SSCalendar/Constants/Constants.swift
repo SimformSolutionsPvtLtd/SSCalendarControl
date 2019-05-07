@@ -20,7 +20,7 @@ struct SSDateFormat {
 ///
 /// - sunday: Sunday
 /// - monday: Monday
-enum WeekStartDay {
+public enum WeekStartDay {
     case sunday
     case monday
 }
@@ -130,8 +130,8 @@ fileprivate func getCountForSunday(_ weekDayNo: Int) -> Int {
 }
 
 /// Global constants
-struct SSConstants {
-    static let todayDate = Date()
+public struct SSConstants {
+    public static let todayDate = Date()
 }
 
 /// SSCalendarView configuration
