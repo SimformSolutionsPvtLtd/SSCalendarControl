@@ -25,6 +25,8 @@ class MainViewController: UIViewController {
     /// Setup without selectable date range
     fileprivate func setupCalendar() {
         /// Configuration
+        calendarView.configuration.monthViewBackgroundColor = UIColor.white
+        calendarView.configuration.monthViewBottomLineColor = UIColor.darkGray
         calendarView.configuration.weekDayLabelBackgroundColor = UIColor.clear
         calendarView.configuration.weekDayLabelTextColor = UIColor.black
         calendarView.configuration.previousDayTextColor = UIColor.black
