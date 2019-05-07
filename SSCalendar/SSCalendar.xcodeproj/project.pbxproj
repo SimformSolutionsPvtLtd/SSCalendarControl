@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73802B3E22818289008375F4 /* .tailor.yml in Resources */ = {isa = PBXBuildFile; fileRef = 73802B3D22818289008375F4 /* .tailor.yml */; };
 		73FCF2BE227C4E30002625FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FCF2BD227C4E30002625FD /* AppDelegate.swift */; };
 		73FCF2C3227C4E30002625FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73FCF2C1227C4E30002625FD /* Main.storyboard */; };
 		73FCF2C5227C4E31002625FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73FCF2C4227C4E31002625FD /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73802B3D22818289008375F4 /* .tailor.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .tailor.yml; sourceTree = "<group>"; };
 		73FCF2BA227C4E30002625FD /* SSCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FCF2BD227C4E30002625FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73FCF2C2227C4E30002625FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		73FCF2B1227C4E30002625FD = {
 			isa = PBXGroup;
 			children = (
+				73802B3D22818289008375F4 /* .tailor.yml */,
 				73FCF2BC227C4E30002625FD /* SSCalendar */,
 				73FCF2BB227C4E30002625FD /* Products */,
 			);
@@ -202,6 +205,7 @@
 				73FCF2B6227C4E30002625FD /* Sources */,
 				73FCF2B7227C4E30002625FD /* Frameworks */,
 				73FCF2B8227C4E30002625FD /* Resources */,
+				73802B3C22818245008375F4 /* Tailor */,
 			);
 			buildRules = (
 			);
@@ -256,12 +260,34 @@
 				73FCF2F3227C4E6C002625FD /* SSHeaderView.xib in Resources */,
 				73FCF2EF227C4E6C002625FD /* SSEmptyDayCell.xib in Resources */,
 				73FCF2F5227C4E6C002625FD /* SSMonthCell.xib in Resources */,
+				73802B3E22818289008375F4 /* .tailor.yml in Resources */,
 				73FCF2F6227C4E6C002625FD /* SSCalendarView.xib in Resources */,
 				73FCF2C3227C4E30002625FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73802B3C22818245008375F4 /* Tailor */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Tailor;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Analyze\" ]; then\nif hash tailor 2>/dev/null; then\necho \"tailer exe\"\ntailor\nelse\necho \"warning: Please install Tailor from https://tailor.sh\"\nfi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		73FCF2B6227C4E30002625FD /* Sources */ = {

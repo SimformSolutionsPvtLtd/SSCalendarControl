@@ -10,7 +10,7 @@ import UIKit
 
 class SSHeaderView: UICollectionReusableView {
     
-    //MARK:- outlets
+    // MARK:- outlets
     @IBOutlet weak var lblDay1: UILabel!
     @IBOutlet weak var lblDay2: UILabel!
     @IBOutlet weak var lblDay3: UILabel!

@@ -11,7 +11,7 @@ import UIKit
 /// Days Cell
 class SSDaysCell: UICollectionViewCell {
     
-    //MARK:- Outlets
+    // MARK:- Outlets
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var viewContent: UIView!
     

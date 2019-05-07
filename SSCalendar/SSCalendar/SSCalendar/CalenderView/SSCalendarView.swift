@@ -17,10 +17,10 @@ protocol SSCalendarDeleagte: class {
 /// Calendar View
 class SSCalendarView: UIView, SSNibLoadable {
     
-    //MARK:- Outlet
+    // MARK:- Outlet
     @IBOutlet weak var cvMonths: UICollectionView!
     
-    //MARK:- Variables
+    // MARK:- Variables
     weak var delegate: SSCalendarDeleagte?
     private var startingDate = SSConstants.todayDate
     private var endingDate = SSConstants.todayDate.getDateAfter(years: 1, months: 0)
@@ -32,7 +32,7 @@ class SSCalendarView: UIView, SSNibLoadable {
     
     private var currentSelectedMonthIndex: IndexPath?
     
-    //MARK:- Constatnts
+    // MARK:- Constatnts
     fileprivate let monthCellID = "MonthCell"
     fileprivate let headerViewID = "HeaderView"
     
@@ -108,7 +108,7 @@ class SSCalendarView: UIView, SSNibLoadable {
     
 }
 
-//MARK:- CalendarView Extension
+// MARK:- CalendarView Extension
 extension SSCalendarView {
     
     fileprivate func getTotalNumberOfItems(model: SSCalendarMonth) -> Int {
@@ -128,7 +128,7 @@ extension SSCalendarView {
     
 }
 
-//MARK:- UICollectionViewDataSource
+// MARK:- UICollectionViewDataSource
 extension SSCalendarView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -157,7 +157,7 @@ extension SSCalendarView: UICollectionViewDataSource {
     
 }
 
-//MARK:- UICollectionViewDelegateFlowLayout
+// MARK:- UICollectionViewDelegateFlowLayout
 extension SSCalendarView: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

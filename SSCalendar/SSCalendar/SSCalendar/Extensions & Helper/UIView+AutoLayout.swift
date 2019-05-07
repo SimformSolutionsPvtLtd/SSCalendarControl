@@ -10,6 +10,7 @@ import UIKit
 
 // MARK: - UIView + AutoLayout extension
 extension UIView {
+    
     /// Constrain 4 edges of `self` to specified `view`.
     func setConstraints(to view: UIView, top: CGFloat=0, left: CGFloat=0, bottom: CGFloat=0, right: CGFloat=0) {
         NSLayoutConstraint.activate([

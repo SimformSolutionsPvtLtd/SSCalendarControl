@@ -15,14 +15,14 @@ protocol MonthCellDelegate: class {
 /// Month Cell
 class SSMonthCell: UICollectionViewCell {
     
-    //MARK:- Outlets
+    // MARK:- Outlets
     @IBOutlet weak var cvDays: UICollectionView!
     @IBOutlet weak var lblMonthDesc: UILabel!
     @IBOutlet weak var viewMonthContent: UIView!
     @IBOutlet weak var viewBottomLine: UIView!
     @IBOutlet weak var viewContent: UIView!
     
-    //MARK:- Variables
+    // MARK:- Variables
     weak var delegate: SSCalendarDeleagte?
     weak var monthDelegate: MonthCellDelegate?
     
@@ -40,7 +40,7 @@ class SSMonthCell: UICollectionViewCell {
     var collectionIndexPath: IndexPath?
     var configuration = SSCalendarConfiguration()
     
-    //MARK:- Constants
+    // MARK:- Constants
     let daysCellID = "DaysCell"
     let emptyDayCellID = "EmptyDayCell"
     
@@ -89,7 +89,7 @@ class SSMonthCell: UICollectionViewCell {
         loadCollection()
     }
     
-    func postConfigurationSetup(weekStartDay: WeekStartDay, shouldSelectPastDays: Bool, allowsMultipleSelection: Bool,  delegate: SSCalendarDeleagte?) {
+    func postConfigurationSetup(weekStartDay: WeekStartDay, shouldSelectPastDays: Bool, allowsMultipleSelection: Bool, delegate: SSCalendarDeleagte?) {
         self.weekStartDay = weekStartDay
         self.shouldSelectPastDays = shouldSelectPastDays
         self.allowsMultipleSelection = allowsMultipleSelection
@@ -156,7 +156,7 @@ extension SSMonthCell: UICollectionViewDelegateFlowLayout {
 extension SSMonthCell: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //MARK:- This is actually manages selection and deselection of cell
+        // MARK:- This is actually manages selection and deselection of cell
         manageSelection(indexPath)
     }
     
@@ -177,7 +177,7 @@ extension SSMonthCell {
     }
     
     fileprivate func deselectAllPreviousCell(_ indexPath: IndexPath) {
-        //MARK:- This is to manage previous cell selection within same month
+        // MARK:- This is to manage previous cell selection within same month
         if let previousIndex = previousIndex, previousIndex != indexPath {
             guard let days = monthModel?.days else { return }
             _ = days.map { $0.isSelected = false }
@@ -203,7 +203,7 @@ extension SSMonthCell {
     }
     
     fileprivate func managePreviousSelection(_ indexPath: IndexPath, model: SSCalendarDay) {
-        //MARK:- This is to manage previous cell selection in whole calendar controll
+        // MARK:- This is to manage previous cell selection in whole calendar controll
         if let collectionIndexPath = collectionIndexPath, !allowsMultipleSelection {
             monthDelegate?.deselectItem(at: collectionIndexPath)
         }
