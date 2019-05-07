@@ -38,7 +38,7 @@ public class SSCalendarView: UIView, SSNibLoadable {
     
     /// Calendar view configration
     var configuration = SSCalendarConfiguration()
-
+    
     override public func awakeFromNib() {
         super.awakeFromNib()
         initialSetup()
@@ -158,18 +158,18 @@ extension SSCalendarView: UICollectionViewDataSource {
 }
 
 // MARK:- UICollectionViewDelegateFlowLayout
-extension SSCalendarView: UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+extension SSCalendarView: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
+
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let height = getCollectionHeight(for: indexPath)
         return CGSize(width: frame.width - 12, height: height + 70)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: cvMonths.bounds.width, height: 50)
     }
     
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+    public func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
             guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerViewID, for: indexPath) as? SSHeaderView else {
