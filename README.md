@@ -7,7 +7,7 @@ SSCalendarControl is Small and beautiful calendar control written in swift 4.2.
 [![Platform][platform-image]][platform-url]
 [![PRs Welcome][PR-image]][PR-url]
 
-![Alt text](https://github.com/simformsolutions/SSSpinnerButton/blob/master/SSSpinnerButton.gif?raw=true)
+![Alt text](https://github.com/simformsolutions/SSCalendar/blob/develop/SSCalendar_Demo.gif)
 
 # Features!
 - Customizable control
