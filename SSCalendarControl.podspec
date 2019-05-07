@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.author             = { "Ketan Chopda" => "reg@simform.in" }
+  spec.author             = { "Ketan Chopda" => "ketan.c@simformsolutions.com" }
 
   spec.platform     = :ios
   spec.ios.deployment_target = "10.0"
