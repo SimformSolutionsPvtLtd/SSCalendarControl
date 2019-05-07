@@ -28,7 +28,6 @@ SSCalendarControl is Small and beautiful calendar control written in swift 4.2.
 use_frameworks!
 pod 'SSCalendarControl'
 
--  
 import UIKit
 import SSCalendarControl
 
@@ -39,7 +38,7 @@ import SSCalendarControl
 # Usage example
 
 -   In the storyboard add a UIView and change its class to SSCalendarView
--   ![Alt text](https://github.com/simformsolutions/SSSpinnerButton/blob/master/SpinnerButtonStoryBoard.png?raw=true)
+-   ![Alt text](https://github.com/simformsolutions/SSCalendar/blob/develop/SSCalendar_Usage.png)
 
 **Setup Calendar**
 
