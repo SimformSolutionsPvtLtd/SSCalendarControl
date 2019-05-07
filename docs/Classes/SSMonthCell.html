@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SSMonthCell Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SSMonthCell" class="dashAnchor"></a>
+    <a title="SSMonthCell Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SSCalendarControl Docs</a> (34% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SSCalendarControl Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SSMonthCell Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SSCalendarConfiguration.html">SSCalendarConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSCalendarDay.html">SSCalendarDay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSCalendarHelper.html">SSCalendarHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSCalendarMonth.html">SSCalendarMonth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSCalendarView.html">SSCalendarView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSDaysCell.html">SSDaysCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSEmptyDayCell.html">SSEmptyDayCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSHeaderView.html">SSHeaderView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SSMonthCell.html">SSMonthCell</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/WeekDays.html">WeekDays</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/WeekStartDay.html">WeekStartDay</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:17SSCalendarControl17getCountForMonday33_67421B943EE6D2930DF662C2F5EBB9C1LLyS2iF">getCountForMonday(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:17SSCalendarControl17getCountForSunday33_67421B943EE6D2930DF662C2F5EBB9C1LLyS2iF">getCountForSunday(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:17SSCalendarControl15getNumberOfDays4year5monthS2i_SitF">getNumberOfDays(year:month:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:17SSCalendarControl13getSkeepCount_8startDayS2i_AA09WeekStartG0OtF">getSkeepCount(_:startDay:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/MonthCellDelegate.html">MonthCellDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SSCalendarDeleagte.html">SSCalendarDeleagte</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SSNibLoadable.html">SSNibLoadable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/SSConstants.html">SSConstants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SSDateFormat.html">SSDateFormat</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SSMonthCell</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SSMonthCell</span> <span class="p">:</span> <span class="kt">UICollectionViewCell</span></code></pre>
+
+                </div>
+              </div>
+            <p>Month Cell</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SSCalendarControl@objc(cs)SSMonthCell(py)cvDays"></a>
+                    <a name="//apple_ref/swift/Property/cvDays" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SSCalendarControl@objc(cs)SSMonthCell(py)cvDays">cvDays</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">cvDays</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SSCalendarControl@objc(cs)SSMonthCell(py)lblMonthDesc"></a>
+                    <a name="//apple_ref/swift/Property/lblMonthDesc" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SSCalendarControl@objc(cs)SSMonthCell(py)lblMonthDesc">lblMonthDesc</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">lblMonthDesc</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SSCalendarControl@objc(cs)SSMonthCell(py)viewMonthContent"></a>
+                    <a name="//apple_ref/swift/Property/viewMonthContent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SSCalendarControl@objc(cs)SSMonthCell(py)viewMonthContent">viewMonthContent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">viewMonthContent</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SSCalendarControl@objc(cs)SSMonthCell(py)viewBottomLine"></a>
+                    <a name="//apple_ref/swift/Property/viewBottomLine" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SSCalendarControl@objc(cs)SSMonthCell(py)viewBottomLine">viewBottomLine</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">viewBottomLine</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SSCalendarControl@objc(cs)SSMonthCell(py)viewContent"></a>
+                    <a name="//apple_ref/swift/Property/viewContent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SSCalendarControl@objc(cs)SSMonthCell(py)viewContent">viewContent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">viewContent</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC8delegateAA0A8Deleagte_pSgXwvp"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC8delegateAA0A8Deleagte_pSgXwvp">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SSCalendarDeleagte.html">SSCalendarDeleagte</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC13monthDelegateAA05MonthdF0_pSgXwvp"></a>
+                    <a name="//apple_ref/swift/Property/monthDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC13monthDelegateAA05MonthdF0_pSgXwvp">monthDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">monthDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MonthCellDelegate.html">MonthCellDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC12currentMonthSivp"></a>
+                    <a name="//apple_ref/swift/Property/currentMonth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC12currentMonthSivp">currentMonth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">currentMonth</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC4yearSivp"></a>
+                    <a name="//apple_ref/swift/Property/year" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC4yearSivp">year</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">year</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC9monthNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/monthName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC9monthNameSSvp">monthName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">monthName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC14monthDaysCountSivp"></a>
+                    <a name="//apple_ref/swift/Property/monthDaysCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC14monthDaysCountSivp">monthDaysCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">monthDaysCount</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC9skipCountSivp"></a>
+                    <a name="//apple_ref/swift/Property/skipCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC9skipCountSivp">skipCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">skipCount</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC12weekStartDayAA04WeekfG0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/weekStartDay" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC12weekStartDayAA04WeekfG0Ovp">weekStartDay</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">weekStartDay</span><span class="p">:</span> <span class="kt"><a href="../Enums/WeekStartDay.html">WeekStartDay</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC20shouldSelectPastDaysSbvp"></a>
+                    <a name="//apple_ref/swift/Property/shouldSelectPastDays" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC20shouldSelectPastDaysSbvp">shouldSelectPastDays</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">shouldSelectPastDays</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC23allowsMultipleSelectionSbvp"></a>
+                    <a name="//apple_ref/swift/Property/allowsMultipleSelection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC23allowsMultipleSelectionSbvp">allowsMultipleSelection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allowsMultipleSelection</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC10monthModelAA0A5MonthCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/monthModel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC10monthModelAA0A5MonthCSgvp">monthModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">monthModel</span><span class="p">:</span> <span class="kt"><a href="../Classes/SSCalendarMonth.html">SSCalendarMonth</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC13previousIndex10Foundation0F4PathVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/previousIndex" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC13previousIndex10Foundation0F4PathVSgvp">previousIndex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">previousIndex</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC19collectionIndexPath10Foundation0fG0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/collectionIndexPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC19collectionIndexPath10Foundation0fG0VSgvp">collectionIndexPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">collectionIndexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC13configurationAA0A13ConfigurationCvp"></a>
+                    <a name="//apple_ref/swift/Property/configuration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC13configurationAA0A13ConfigurationCvp">configuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/SSCalendarConfiguration.html">SSCalendarConfiguration</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC04daysD2IDSSvp"></a>
+                    <a name="//apple_ref/swift/Property/daysCellID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC04daysD2IDSSvp">daysCellID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">daysCellID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC08emptyDayD2IDSSvp"></a>
+                    <a name="//apple_ref/swift/Property/emptyDayCellID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC08emptyDayD2IDSSvp">emptyDayCellID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">emptyDayCellID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SSCalendarControl@objc(cs)SSMonthCell(im)awakeFromNib"></a>
+                    <a name="//apple_ref/swift/Method/awakeFromNib()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SSCalendarControl@objc(cs)SSMonthCell(im)awakeFromNib">awakeFromNib()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">awakeFromNib</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SSCalendarControl@objc(cs)SSMonthCell(im)drawRect:"></a>
+                    <a name="//apple_ref/swift/Method/draw(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SSCalendarControl@objc(cs)SSMonthCell(im)drawRect:">draw(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">draw</span><span class="p">(</span><span class="n">_</span> <span class="nv">rect</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC10setupViews33_810A76EE6BE10F5581A596F411BCE856LLyyF"></a>
+                    <a name="//apple_ref/swift/Method/setupViews()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC10setupViews33_810A76EE6BE10F5581A596F411BCE856LLyyF">setupViews()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">setupViews</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC12initialSetUp33_810A76EE6BE10F5581A596F411BCE856LLyyF"></a>
+                    <a name="//apple_ref/swift/Method/initialSetUp()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC12initialSetUp33_810A76EE6BE10F5581A596F411BCE856LLyyF">initialSetUp()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">initialSetUp</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC14loadCollection33_810A76EE6BE10F5581A596F411BCE856LLyyF"></a>
+                    <a name="//apple_ref/swift/Method/loadCollection()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC14loadCollection33_810A76EE6BE10F5581A596F411BCE856LLyyF">loadCollection()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">loadCollection</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC09configureD05model6configyAA0A5MonthC_AA0A13ConfigurationCtF"></a>
+                    <a name="//apple_ref/swift/Method/configureCell(model:config:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC09configureD05model6configyAA0A5MonthC_AA0A13ConfigurationCtF">configureCell(model:config:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureCell</span><span class="p">(</span><span class="nv">model</span><span class="p">:</span> <span class="kt"><a href="../Classes/SSCalendarMonth.html">SSCalendarMonth</a></span><span class="p">,</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/SSCalendarConfiguration.html">SSCalendarConfiguration</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC22postConfigurationSetup12weekStartDay20shouldSelectPastDays23allowsMultipleSelection8delegateyAA04WeekiJ0O_S2bAA0A8Deleagte_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/postConfigurationSetup(weekStartDay:shouldSelectPastDays:allowsMultipleSelection:delegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC22postConfigurationSetup12weekStartDay20shouldSelectPastDays23allowsMultipleSelection8delegateyAA04WeekiJ0O_S2bAA0A8Deleagte_pSgtF">postConfigurationSetup(weekStartDay:shouldSelectPastDays:allowsMultipleSelection:delegate:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">postConfigurationSetup</span><span class="p">(</span><span class="nv">weekStartDay</span><span class="p">:</span> <span class="kt"><a href="../Enums/WeekStartDay.html">WeekStartDay</a></span><span class="p">,</span> <span class="nv">shouldSelectPastDays</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">allowsMultipleSelection</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SSCalendarDeleagte.html">SSCalendarDeleagte</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UICollectionViewDataSource"></a>
+                <a name="//apple_ref/swift/Section/UICollectionViewDataSource" class="dashAnchor"></a>
+                <a href="#/UICollectionViewDataSource">
+                  <h3 class="section-name">UICollectionViewDataSource</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SSCalendarControl@objc(cs)SSMonthCell(im)collectionView:numberOfItemsInSection:"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:numberOfItemsInSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SSCalendarControl@objc(cs)SSMonthCell(im)collectionView:numberOfItemsInSection:">collectionView(_:numberOfItemsInSection:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">numberOfItemsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SSCalendarControl@objc(cs)SSMonthCell(im)collectionView:cellForItemAtIndexPath:"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:cellForItemAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SSCalendarControl@objc(cs)SSMonthCell(im)collectionView:cellForItemAtIndexPath:">collectionView(_:cellForItemAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">cellForItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UICollectionViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UICollectionViewDelegateFlowLayout"></a>
+                <a name="//apple_ref/swift/Section/UICollectionViewDelegateFlowLayout" class="dashAnchor"></a>
+                <a href="#/UICollectionViewDelegateFlowLayout">
+                  <h3 class="section-name">UICollectionViewDelegateFlowLayout</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SSCalendarControl@objc(cs)SSMonthCell(im)collectionView:layout:sizeForItemAtIndexPath:"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:layout:sizeForItemAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SSCalendarControl@objc(cs)SSMonthCell(im)collectionView:layout:sizeForItemAtIndexPath:">collectionView(_:layout:sizeForItemAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">layout</span> <span class="nv">collectionViewLayout</span><span class="p">:</span> <span class="kt">UICollectionViewLayout</span><span class="p">,</span> <span class="n">sizeForItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SSCalendarControl@objc(cs)SSMonthCell(im)collectionView:layout:insetForSectionAtIndex:"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:layout:insetForSectionAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SSCalendarControl@objc(cs)SSMonthCell(im)collectionView:layout:insetForSectionAtIndex:">collectionView(_:layout:insetForSectionAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">layout</span> <span class="nv">collectionViewLayout</span><span class="p">:</span> <span class="kt">UICollectionViewLayout</span><span class="p">,</span> <span class="n">insetForSectionAt</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIEdgeInsets</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SSCalendarControl@objc(cs)SSMonthCell(im)collectionView:layout:minimumInteritemSpacingForSectionAtIndex:"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:layout:minimumInteritemSpacingForSectionAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SSCalendarControl@objc(cs)SSMonthCell(im)collectionView:layout:minimumInteritemSpacingForSectionAtIndex:">collectionView(_:layout:minimumInteritemSpacingForSectionAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">layout</span> <span class="nv">collectionViewLayout</span><span class="p">:</span> <span class="kt">UICollectionViewLayout</span><span class="p">,</span> <span class="n">minimumInteritemSpacingForSectionAt</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SSCalendarControl@objc(cs)SSMonthCell(im)collectionView:layout:minimumLineSpacingForSectionAtIndex:"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:layout:minimumLineSpacingForSectionAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SSCalendarControl@objc(cs)SSMonthCell(im)collectionView:layout:minimumLineSpacingForSectionAtIndex:">collectionView(_:layout:minimumLineSpacingForSectionAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">layout</span> <span class="nv">collectionViewLayout</span><span class="p">:</span> <span class="kt">UICollectionViewLayout</span><span class="p">,</span> <span class="n">minimumLineSpacingForSectionAt</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UICollectionViewDelegate"></a>
+                <a name="//apple_ref/swift/Section/UICollectionViewDelegate" class="dashAnchor"></a>
+                <a href="#/UICollectionViewDelegate">
+                  <h3 class="section-name">UICollectionViewDelegate</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@SSCalendarControl@objc(cs)SSMonthCell(im)collectionView:didSelectItemAtIndexPath:"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:didSelectItemAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@SSCalendarControl@objc(cs)SSMonthCell(im)collectionView:didSelectItemAtIndexPath:">collectionView(_:didSelectItemAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">didSelectItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/MonthCell%20extension"></a>
+                <a name="//apple_ref/swift/Section/MonthCell extension" class="dashAnchor"></a>
+                <a href="#/MonthCell%20extension">
+                  <h3 class="section-name">MonthCell extension</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC15manageSelection33_810A76EE6BE10F5581A596F411BCE856LLyy10Foundation9IndexPathVF"></a>
+                    <a name="//apple_ref/swift/Method/manageSelection(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC15manageSelection33_810A76EE6BE10F5581A596F411BCE856LLyy10Foundation9IndexPathVF">manageSelection(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">manageSelection</span><span class="p">(</span><span class="n">_</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC019deselectAllPreviousD033_810A76EE6BE10F5581A596F411BCE856LLyy10Foundation9IndexPathVF"></a>
+                    <a name="//apple_ref/swift/Method/deselectAllPreviousCell(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC019deselectAllPreviousD033_810A76EE6BE10F5581A596F411BCE856LLyy10Foundation9IndexPathVF">deselectAllPreviousCell(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">deselectAllPreviousCell</span><span class="p">(</span><span class="n">_</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC19handleDateSelection33_810A76EE6BE10F5581A596F411BCE856LL4with4date9indexPathyAA0A3DayC_10Foundation0F0VAK05IndexR0VtF"></a>
+                    <a name="//apple_ref/swift/Method/handleDateSelection(with:date:indexPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC19handleDateSelection33_810A76EE6BE10F5581A596F411BCE856LL4with4date9indexPathyAA0A3DayC_10Foundation0F0VAK05IndexR0VtF">handleDateSelection(with:date:indexPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">handleDateSelection</span><span class="p">(</span><span class="n">with</span> <span class="nv">model</span><span class="p">:</span> <span class="kt"><a href="../Classes/SSCalendarDay.html">SSCalendarDay</a></span><span class="p">,</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC23managePreviousSelection33_810A76EE6BE10F5581A596F411BCE856LL_5modely10Foundation9IndexPathV_AA0A3DayCtF"></a>
+                    <a name="//apple_ref/swift/Method/managePreviousSelection(_:model:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC23managePreviousSelection33_810A76EE6BE10F5581A596F411BCE856LL_5modely10Foundation9IndexPathV_AA0A3DayCtF">managePreviousSelection(_:model:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">managePreviousSelection</span><span class="p">(</span><span class="n">_</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">,</span> <span class="nv">model</span><span class="p">:</span> <span class="kt"><a href="../Classes/SSCalendarDay.html">SSCalendarDay</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC12deSelectDate33_810A76EE6BE10F5581A596F411BCE856LLyy10Foundation0G0VF"></a>
+                    <a name="//apple_ref/swift/Method/deSelectDate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC12deSelectDate33_810A76EE6BE10F5581A596F411BCE856LLyy10Foundation0G0VF">deSelectDate(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">deSelectDate</span><span class="p">(</span><span class="n">_</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC10selectDate33_810A76EE6BE10F5581A596F411BCE856LLyy10Foundation0F0VF"></a>
+                    <a name="//apple_ref/swift/Method/selectDate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC10selectDate33_810A76EE6BE10F5581A596F411BCE856LLyy10Foundation0F0VF">selectDate(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">selectDate</span><span class="p">(</span><span class="n">_</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/This%20is%20only%20for%20handle%20single%20selection"></a>
+                <a name="//apple_ref/swift/Section/This is only for handle single selection" class="dashAnchor"></a>
+                <a href="#/This%20is%20only%20for%20handle%20single%20selection">
+                  <h3 class="section-name">This is only for handle single selection</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SSCalendarControl11SSMonthCellC26reloadDataFromCalenderViewyyF"></a>
+                    <a name="//apple_ref/swift/Method/reloadDataFromCalenderView()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SSCalendarControl11SSMonthCellC26reloadDataFromCalenderViewyyF">reloadDataFromCalenderView()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">reloadDataFromCalenderView</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2018cla MIT. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

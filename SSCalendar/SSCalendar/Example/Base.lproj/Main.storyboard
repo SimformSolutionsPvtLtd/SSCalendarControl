@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lPP-r6-kr9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="4gy-iJ-g8I">
+            <objects>
+                <viewController id="lPP-r6-kr9" customClass="MainViewController" customModule="SSCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yGu-8d-p3I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6eh-uM-rvW">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.56470588239999997" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsC-U7-iRu" customClass="SSCalendarView" customModule="SSCalendar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSCalendarControl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4Z-RW-W27">
+                                <rect key="frame" x="0.0" y="40" width="375" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xUP-US-dMF" firstAttribute="trailing" secondItem="tsC-U7-iRu" secondAttribute="trailing" id="5ik-Sn-EJC"/>
+                            <constraint firstItem="C4Z-RW-W27" firstAttribute="top" secondItem="xUP-US-dMF" secondAttribute="top" constant="20" id="7Xn-gq-XSo"/>
+                            <constraint firstItem="xUP-US-dMF" firstAttribute="bottom" secondItem="6eh-uM-rvW" secondAttribute="bottom" id="FLk-9K-YkN"/>
+                            <constraint firstItem="xUP-US-dMF" firstAttribute="bottom" secondItem="tsC-U7-iRu" secondAttribute="bottom" id="QYO-a5-AJo"/>
+                            <constraint firstItem="C4Z-RW-W27" firstAttribute="leading" secondItem="xUP-US-dMF" secondAttribute="leading" id="Vdu-c9-Lh0"/>
+                            <constraint firstItem="tsC-U7-iRu" firstAttribute="top" secondItem="C4Z-RW-W27" secondAttribute="bottom" constant="20" id="cyN-0x-Icg"/>
+                            <constraint firstItem="xUP-US-dMF" firstAttribute="trailing" secondItem="C4Z-RW-W27" secondAttribute="trailing" id="gGk-lh-62p"/>
+                            <constraint firstItem="xUP-US-dMF" firstAttribute="trailing" secondItem="6eh-uM-rvW" secondAttribute="trailing" id="hGa-hs-60y"/>
+                            <constraint firstItem="6eh-uM-rvW" firstAttribute="top" secondItem="xUP-US-dMF" secondAttribute="top" id="kt3-G5-bJK"/>
+                            <constraint firstItem="6eh-uM-rvW" firstAttribute="leading" secondItem="xUP-US-dMF" secondAttribute="leading" id="xJo-Xe-MFt"/>
+                            <constraint firstItem="tsC-U7-iRu" firstAttribute="top" secondItem="xUP-US-dMF" secondAttribute="top" constant="100" id="ySx-2Z-eya"/>
+                            <constraint firstItem="tsC-U7-iRu" firstAttribute="leading" secondItem="xUP-US-dMF" secondAttribute="leading" id="zhg-VW-Oe4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xUP-US-dMF"/>
+                    </view>
+                    <connections>
+                        <outlet property="calendarView" destination="tsC-U7-iRu" id="bmA-5O-pLu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Mw-Bo-NW3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>
