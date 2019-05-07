@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SSCalendarControl"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0.0"
   spec.summary      = "A simple and lightweight calendar control written in swift."
 
   # This description is used to generate tags and improve search results.
