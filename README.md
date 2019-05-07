@@ -1,5 +1,5 @@
 # SSCalendarControl
-SSCalendarControl is Small and beautiful calendar control written in swift 4.2.
+SSCalendarControl is small and beautiful calendar control written in swift 4.2.
 
 [![Swift Version][swift-image]][swift-url]
 [![Build Status][travis-image]][travis-url]
