@@ -12,7 +12,8 @@ SSCalendarControl is Small and beautiful calendar control written in swift 4.2.
 # Features!
 - Customizable control
 - Flexible date range
-- 
+- Customizable week day
+- Customizable month and days cells
 - CocoaPods
 
 # Requirements
@@ -37,37 +38,37 @@ import SSCalendarControl
 
 # Usage example
 
--   In the storyboard add a UIButton and change its class to SSSpinnerButton
+-   In the storyboard add a UIView and change its class to SSCalendarView
 -   ![Alt text](https://github.com/simformsolutions/SSSpinnerButton/blob/master/SpinnerButtonStoryBoard.png?raw=true)
 
 **Setup Calendar**
 
-calendarView.setUpCalendar(startDate: startDate, endDate: endDate, weekStartDay: .monday, shouldSelectPastDays: true, sholudAllowMultipleSelection: false)
+    calendarView.setUpCalendar(startDate: startDate, endDate: endDate, weekStartDay: .monday, shouldSelectPastDays: true, sholudAllowMultipleSelection: false)
 
 **Weekday Customization**
 
-calendarView.configuration.weekDayBorderColor = UIColor.black
-calendarView.configuration.weekDayLabelBackgroundColor = UIColor.clear
-calendarView.configuration.weekDayLabelTextColor = UIColor.black
+    calendarView.configuration.weekDayBorderColor = UIColor.black
+    calendarView.configuration.weekDayLabelBackgroundColor = UIColor.clear
+    calendarView.configuration.weekDayLabelTextColor = UIColor.black
 
 **Month Customization**
 
-calendarView.configuration.monthViewBackgroundColor = UIColor.white
-calendarView.configuration.monthViewBottomLineColor = UIColor.darkGray
-calendarView.configuration.monthLabelFont = UIFont.systemFont(ofSize: 20)
-calendarView.configuration.monthLabelTextColor = UIColor.red
+    calendarView.configuration.monthViewBackgroundColor = UIColor.white
+    calendarView.configuration.monthViewBottomLineColor = UIColor.darkGray
+    calendarView.configuration.monthLabelFont = UIFont.systemFont(ofSize: 20)
+    calendarView.configuration.monthLabelTextColor = UIColor.red
 
 **Days Customization**
 
-calendarView.configuration.previousDayTextColor = UIColor.black
-calendarView.configuration.previousDayBorderColor = UIColor.clear
-calendarView.configuration.upcomingDaysBorderColor = UIColor.clear
-calendarView.configuration.upcomingDaysBorderColor = UIColor.clear
-calendarView.configuration.upcomingDayTextColor = UIColor.brown
-calendarView.configuration.selectedDayTextColor = UIColor.yellow
-calendarView.configuration.currentDayBorderColor = UIColor.black
-calendarView.configuration.currentDayTextColor = UIColor.white
-calendarView.configuration.currentDayBackgroundColor = UIColor.red
+    calendarView.configuration.previousDayTextColor = UIColor.black
+    calendarView.configuration.previousDayBorderColor = UIColor.clear
+    calendarView.configuration.upcomingDaysBorderColor = UIColor.clear
+    calendarView.configuration.upcomingDaysBorderColor = UIColor.clear
+    calendarView.configuration.upcomingDayTextColor = UIColor.brown
+    calendarView.configuration.selectedDayTextColor = UIColor.yellow
+    calendarView.configuration.currentDayBorderColor = UIColor.black
+    calendarView.configuration.currentDayTextColor = UIColor.white
+    calendarView.configuration.currentDayBackgroundColor = UIColor.red
 
 #  Contribute
 -   We would love you for the contribution to SSspinnerButton, check the LICENSE file for more info.
