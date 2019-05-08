@@ -22,7 +22,6 @@ SSCalendarControl is small and highly customizable calendar control written in s
 - Xcode 9+
 
 # Installation
-# Installation
  
 - You can use CocoaPods to install SSCalendarControl by adding it to your Podfile:
 
