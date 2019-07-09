@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SSCalendarControl"
-  spec.version      = "1.0.1"
+  spec.version      = "2.0.0"
   spec.summary      = "A simple and lightweight calendar control written in swift."
 
   # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios
   spec.ios.deployment_target = "10.0"
-  spec.swift_version = '4.2'
+  spec.swift_version = '5.0'
 
   spec.source       = { :git => "https://github.com/simformsolutions/SSCalendar.git", :tag => "#{spec.version}" }
 
