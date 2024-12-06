@@ -145,7 +145,7 @@ extension SSCalendarView: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: monthCellID, for: indexPath) as? SSMonthCell else {
             return UICollectionViewCell()
         }
-        cell.configureCell(model: self.monthModels[indexPath.row], config: configuration)
+        cell.configureCell(model: self.monthModels[indexPath.row], config: configuration, weekStartDay: self.weekStartDay)
         DispatchQueue.global(qos: .background).async { [weak self] in
             guard let uSelf = self else {
                 return

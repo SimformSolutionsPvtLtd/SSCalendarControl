@@ -79,7 +79,8 @@ class SSMonthCell: UICollectionViewCell {
         }
     }
     
-    func configureCell(model: SSCalendarMonth, config: SSCalendarConfiguration) {
+    func configureCell(model: SSCalendarMonth, config: SSCalendarConfiguration, weekStartDay: WeekStartDay) {
+        self.weekStartDay = weekStartDay
         self.configuration = config
         self.monthModel = model
         self.currentMonth = model.monthNo
