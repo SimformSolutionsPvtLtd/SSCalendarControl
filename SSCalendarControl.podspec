@@ -43,7 +43,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/simformsolutions/SSCalendar.git", :tag => "#{spec.version}" }
 
-  spec.source_files  = "SSCalendar/SSCalendar/SSCalendar/**/*.swift"
-  spec.resources = ['SSCalendar/SSCalendar/SSCalendar/**/*.xib']
+  spec.source_files  = "Sources/SSCalendarControl/SSCalendar/**/*.swift"
+  spec.resources = ['Sources/SSCalendarControl/SSCalendar/**/*.xib']
 
 end
